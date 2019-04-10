@@ -208,17 +208,6 @@ eventbrite: 58374851753           # optional: alphanumeric key for Eventbrite re
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 {% endcomment %}
-<h2 id="syllabus">Syllabus</h2>
-
-{% if page.carpentry == "swc" %}
-  {% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/syllabus.html %}
-{% endif %}
-
-<hr/>
 
 {% comment %}
   SETUP
@@ -235,15 +224,7 @@ eventbrite: 58374851753           # optional: alphanumeric key for Eventbrite re
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a
-  {% if page.carpentry == "swc" %}
-  Software Carpentry
-  {% elsif page.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif page.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
-  workshop,
+  To participate in the workshop,
   you will need access to the software described below.
   In addition, you will need an up-to-date web browser.
 </p>
